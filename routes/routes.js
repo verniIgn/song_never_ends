@@ -8,7 +8,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index',
   { title: 'Home',
-    image: "../images/lambchop1.jpg",
+    image: "lambchop1.jpg",
     lyric: "This is the song that never ends",
     nextPage: "/verse-2"
   });
@@ -17,7 +17,7 @@ router.get('/', function(req, res, next) {
   router.get('/verse-2', function(req, res, next) {
     res.render('index',
     { title: 'Verse Two',
-      image: "../images/lambchop2.jpg",
+      image: "lambchop2.jpg",
       lyric: "It just goes on and on my friends",
       nextPage: "/verse-3"
     });
@@ -26,7 +26,7 @@ router.get('/', function(req, res, next) {
   router.get('/verse-3', function(req, res, next) {
     res.render('index',
     { title: 'Verse Three',
-      image: "../images/lambchop3.jpg",
+      image: "lambchop3.jpg",
       lyric: "Some people started singing it not knowing what it was",
       nextPage: "/verse-4"
     });
@@ -35,7 +35,7 @@ router.get('/', function(req, res, next) {
   router.get('/verse-4', function(req, res, next) {
     res.render('index',
     { title: 'Verse Four',
-      image: "../images/lambchop4.jpg",
+      image: "lambchop4.jpg",
       lyric: "And theyll continue singing it forevor just because...",
       nextPage: "/"
     });
